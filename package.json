@@ -1,0 +1,34 @@
+{
+  "name": "copynode",
+  "version": "0.0.1",
+  "description": "Copy a node that looks the same.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --config build/webpack.dev.conf.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kangschampagne/copyNode.git"
+  },
+  "keywords": [
+    "cloneNode"
+  ],
+  "author": "Kagen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kangschampagne/copyNode/issues"
+  },
+  "homepage": "https://github.com/kangschampagne/copyNode#readme",
+  "devDependencies": {
+    "babel-loader": "^7.1.4",
+    "eslint": "^4.18.2",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.10"
+  }
+}
