@@ -6,6 +6,7 @@ export function processClone (original, clone) {
   if (!(clone instanceof Element)) return clone
 
   return Promise.resolve()
+    .then(cloneImage)
     .then(cloneStyle)
     .then(clonePseudoElements)
     .then(function () {
@@ -31,6 +32,22 @@ export function processClone (original, clone) {
           )
         })
       }
+    }
+  }
+
+  function cloneImage () {
+    // eslint-disable-next-line
+    if (original instanceof HTMLImageElement) {
+      original.onload = function () {
+        cloneStyle()
+      }
+      // return new Promise(function (resolve, reject) {
+      //   original.onload = function () {
+      //     cloneStyle()
+      //     resolve()
+      //   }
+      //   original.onerror = reject
+      // })
     }
   }
 

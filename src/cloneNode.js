@@ -43,9 +43,4 @@ function cloneNode (node, filter) {
   }
 }
 
-async function cloneNode (node, filter) {
-  await makeNodeCopy(node)
-
-}
-
 export default cloneNode

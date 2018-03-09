@@ -9,7 +9,7 @@ var webpackConfig = {
   output: {
     filename: '[name].js',
     path: path.resolve(process.cwd(), 'dist'),
-    library: `copynode`,
+    library: `copyNode`,
     libraryTarget: 'umd'
   },
   module: {
